@@ -16,11 +16,13 @@ import Footer from "./components/Footer.vue"
 
 import Home from "./components/Home.vue"
 import Firefly from "./components/Firefly/Firefly.vue"
+import WeakMeatStrongDiet from "./components/WeakMeatStrongDiet/WeakMeatStrongDiet.vue"
 import Profile from "./components/Profile.vue"
 import Hobbies from "./components/Hobbies.vue"
 import Drone from "./components/Drone.vue"
 import ODM from "./components/ODM.vue"
 import Contact from "./components/Contact.vue"
+
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
@@ -51,9 +53,11 @@ const router = new VueRouter({
         { path: "/home", component: Home },
         { path: "/profile", component: Profile },
         { path: "/hobbies", component: Hobbies },
+        { path: "/hobbies/firefly", component: Firefly },
+        { path: "/hobbies/wmsd-game", component: WeakMeatStrongDiet },
+        
         { path: "/drone", component: Drone },
         { path: "/odm", component: ODM },
-        { path: "/firefly", component: Firefly },
         { path: "/contact", component: Contact },
     ]
 });
